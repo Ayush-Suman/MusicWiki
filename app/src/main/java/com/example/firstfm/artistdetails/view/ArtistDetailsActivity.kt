@@ -68,7 +68,7 @@ class ArtistDetailsActivity : AppCompatActivity() {
             }
         })
 
-        /*viewModel.artistAlbumsLiveData.observe(this, {
+        viewModel.artistAlbumsLiveData.observe(this, {
             if(it.status==Status.SUCCESS){
                 albumsListAdapter.setData(it.data!!.topalbums.album)
             } else if(it.status==Status.ERROR){
@@ -82,7 +82,7 @@ class ArtistDetailsActivity : AppCompatActivity() {
             } else if(it.status==Status.ERROR) {
                 d("Tracks Error", it.failure.toString())
             }
-        })*/
+        })
 
     }
 }

@@ -28,7 +28,7 @@ class ArtistDetailsViewModel @Inject constructor(private val artistsDetailsRepos
         }
     }
 
-    /*val artistTracksLiveData:LiveData<Outcome<ArtistTracks>> by lazy {
+    val artistTracksLiveData:LiveData<Outcome<ArtistTracks>> by lazy {
         liveData(Dispatchers.IO) {
             emit(Outcome.loading<ArtistTracks>())
             try {
@@ -48,6 +48,6 @@ class ArtistDetailsViewModel @Inject constructor(private val artistsDetailsRepos
                 emit(Outcome.error<ArtistAlbums>(e))
             }
         }
-    }*/
+    }
 
 }
